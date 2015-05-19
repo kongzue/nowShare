@@ -1,0 +1,28 @@
+{
+  "message": "登录成功",
+  "uuid": "96f64b20-04d0-4e9c-a30d-e40b0f08217d",
+  "user": {
+    "actionErrors": [],
+    "actionMessages": [],
+    "dataMap": {},
+    "errorMessages": [],
+    "errors": {},
+    "fieldErrors": {},
+    "locale": "zh_CN",
+    "texts": null,
+    "ubirthday": null,
+    "uemail": null,
+    "ugender": null,
+    "unick": "kongzue",
+    "uremark": null,
+    "utelephone": null,
+    "uuid": "96f64b20-04d0-4e9c-a30d-e40b0f08217d",
+    "uusername": "myzchh"
+  },
+  "status": true
+}
+
+{
+  "message":"登陆失败，用户不存在",
+  "status":false
+}

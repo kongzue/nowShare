@@ -1,0 +1,198 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".LoginActivity"
+    android:background="#ffffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgTitle"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/p_welcome"
+            android:layout_marginTop="0dp" />
+
+        <ImageView
+            android:layout_width="88dp"
+            android:layout_height="43dp"
+            android:id="@+id/image_title"
+            android:layout_marginTop="88dp"
+            android:background="@drawable/ic_logo"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/loginBox"
+        android:layout_marginTop="210dp"
+        android:layout_marginBottom="-210dp">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageView4"
+            android:background="#ffffffff" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="44dp"
+            android:inputType="textPersonName"
+            android:gravity="center"
+            android:hint="用户名"
+            android:ems="10"
+            android:id="@+id/textbox_user"
+            android:background="@drawable/p_textbox_bkg"
+            android:textSize="16sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="80dp" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="44dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="密码"
+            android:id="@+id/textbox_password"
+            android:background="@drawable/p_textbox_bkg"
+            android:textSize="16sp"
+            android:layout_below="@+id/textbox_user"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true" />
+
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/button_login"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_login"
+            android:clickable="true"
+            android:layout_marginBottom="210dp" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/button_login_shadow"
+            android:background="@drawable/btn_login_shadow"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/button_login"
+            android:layout_alignStart="@+id/button_login"
+            android:layout_marginBottom="210dp" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/button_problem_shadow"
+            android:background="@drawable/btn_login_shadow"
+            android:layout_below="@+id/textbox_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="遇到问题?"
+            android:id="@+id/button_problem"
+            android:layout_below="@+id/textbox_password"
+            android:layout_centerHorizontal="true"
+            android:textColor="#980051ff"
+            android:layout_marginTop="25dp"
+            android:clickable="true"
+            android:onClick="problemOnClick"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#82000000"
+        android:id="@+id/loginTip"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="180dp"
+            android:id="@+id/imageView"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#ffffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录到乐享"
+            android:id="@+id/textView"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#ff000000"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录到乐享，您可以轻松分享您的所见所闻，您的好友亦可以随时查看您的见闻，分享您的快乐。"
+            android:id="@+id/textView2"
+            android:layout_below="@+id/textView"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/button_iknow_shadow"
+            android:background="@drawable/btn_login_shadow"
+            android:layout_below="@+id/textView2"
+            android:layout_alignLeft="@+id/button_iknow"
+            android:layout_alignStart="@+id/button_iknow"
+            android:layout_marginTop="-8dp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="我知道了"
+            android:id="@+id/button_iknow"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#00ffffff"
+            android:onClick="iknowOnClick"
+            android:textColor="#980051ff" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_logintip"
+        android:textColor="#980051ff"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp" />
+
+</RelativeLayout>
