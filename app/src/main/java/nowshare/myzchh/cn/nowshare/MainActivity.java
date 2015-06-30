@@ -298,9 +298,6 @@ public class MainActivity extends BaseActivity {
 
             protected void onPostExecute(Object result) {
                 super.onPostExecute(result);
-
-                //showMessageByToast("getResult:" + result);
-
                 try {
                     JSONTokener jsonParser = new JSONTokener(result + "");
                     JSONObject loginmsg = (JSONObject) jsonParser.nextValue();
@@ -501,6 +498,7 @@ public class MainActivity extends BaseActivity {
 
     public void getUserInfo(){
         //开始登录
+        final String strUsername=title_Name.getText().toString();
         new AsyncTask<String, Void, Object>() {
             @Override
             protected Object doInBackground(String... params) {
@@ -512,7 +510,7 @@ public class MainActivity extends BaseActivity {
                     HttpPost post = new HttpPost(url);
                     //设置参数，仿html表单提交
                     List<NameValuePair> paramList = new ArrayList<NameValuePair>();
-                    BasicNameValuePair param = new BasicNameValuePair("uusername",title_Name.getText().toString());
+                    BasicNameValuePair param = new BasicNameValuePair("uusername",strUsername);
                     paramList.add(param);
 
                     post.setEntity(new UrlEncodedFormEntity(paramList, HTTP.UTF_8));
